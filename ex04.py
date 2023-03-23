@@ -8,5 +8,3 @@ class Usuario():
 
 
 print(Usuario("José", "Fernandes"))
-
-    

@@ -2,7 +2,7 @@ class Carro():
     def __init__(self, consumo_por_km):
         self.consumo_por_km = consumo_por_km
         self.nivel_combustivel = 0
-        
+
     def adicionar_gasolina(self, litros_gasolina):
         self.nivel_combustivel += litros_gasolina
 

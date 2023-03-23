@@ -5,10 +5,10 @@ class usuario():
 
     def hello(self, pessoa):
         return f"Olá {pessoa.primeironome} {pessoa.ultimonome}, meu nome é {self.primeironome}"
-    
+
 
 usuario1 = usuario("Jonnie", "Bravo")
-usuario2 = usuario("Maria", "Silva") 
+usuario2 = usuario("Maria", "Silva")
 
 # Usuario1 dando olá para o usuario2 e vice e versa
 print(usuario1.hello(usuario2))

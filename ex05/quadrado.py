@@ -11,4 +11,4 @@ class Quadrado:
 
 quadrado = Quadrado(2)
 quadrado.mudar_Valor_Lado(novo_tamanho=4)
-print(quadrado.mostra_Area())   
+print(quadrado.mostra_Area())

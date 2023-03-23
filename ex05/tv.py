@@ -5,10 +5,10 @@ class Tv():
 
     def aumentar_volume(self):
         self.volume += 1
-    
+
     def diminuir_volume(self):
         self.volume -= 1
-    
+
     def trocar_canal(self, novo_canal):
         self.numero_do_canal = novo_canal
 

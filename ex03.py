@@ -5,13 +5,14 @@ class Usuario:
     @property
     def primeiro_nome(self):
         return self.__primeiro_nome
-    
+
     @primeiro_nome.setter
     def primeiro_nome(self, primeiro_nome):
         self.__primeiro_nome = primeiro_nome
 
     def hello(self):
         return f"Olá {self.primeiro_nome} {self.ultimo_nome}"
+
 
 usuario1 = Usuario()
 usuario1.primeiro_nome = "Joe"

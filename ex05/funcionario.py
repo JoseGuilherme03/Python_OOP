@@ -17,7 +17,7 @@ class Funcionario():
 
     def __str__(self):
         return f"Nome: {self.nome} - Salário: {self.salario}"
-    
+
 
 gerente = Funcionario("João", 1000)
 gerente.aumenta_salario(10)

@@ -16,31 +16,30 @@ class Tamagushi():
     @property
     def fome(self):
         return self._fome
-    
+
     @fome.setter
     def fome(self, nova_fome):
         self._fome = nova_fome
-    
+
     @property
     def saude(self):
         return self._saude
-    
+
     @saude.setter
     def saude(self, nova_saude):
         self._saude = nova_saude
-    
+
     @property
     def idade(self):
         return self._idade
-    
+
     @idade.setter
     def idade(self, nova_idade):
         self._idade = nova_idade
 
     def calcular_humor(self):
         return (self._fome + self._saude) / 2
-    
-    
+
     def __str__(self):
         return f"""
     Nome: {self.nome}
@@ -49,7 +48,7 @@ class Tamagushi():
     Idade: {self._idade}
     Humor: {self.calcular_humor()}
         """
-    
+
 
 baby_dino = Tamagushi("Baby Dino", 0, 0, 0)
 chickpet = Tamagushi("Chickpet", 0, 0, 0)
@@ -84,4 +83,3 @@ while opcao != 4:
         print("Opção inválida!")
     for tamagushi in fazenda_tamagushi:
         print(tamagushi)
-
