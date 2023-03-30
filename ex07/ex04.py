@@ -1,29 +1,25 @@
-class Forma():
-    def area(self, objeto):
-        return f"Area da {objeto} = "
-
-class Retangulo(Forma):
-    def __init__(self, comprimento, largura, nome):
+class Pessoa():
+    def __init__(self, nome, idade):
         self.nome = nome
-        self.comprimento = comprimento
-        self.largura = largura
+        self.idade = idade
+
+
+class Funcionario(Pessoa):
+    def __init__(self, nome, idade, salario):
+        super().__init__(nome, idade)
+        self.salario = salario
     
-    def area(self):
-        return f"{super().area(self.nome)} {self.comprimento * self.largura}"
+    def aumento(self, porcentagem_aumento):
+        self.salario += ((self.salario * porcentagem_aumento) / 100)
+
+    def __str__(self):
+        return f"nome: {self.nome}, idade: {self.idade}, salário: {self.salario}"
 
 
-class Circulo(Forma):
-    def __init__(self, raio, nome):
-        self.nome = nome
-        self.raio = raio
-
-    def area(self):
-        return f"{super().area(self.nome)} {3.14 * self.raio ** 2}"
+funcionario1 = Funcionario("João", 19, 1000)
+funcionario1.aumento(10)
+print(funcionario1)
 
 
-sala = Retangulo(nome="sala" ,comprimento=10, largura=5)
-bola = Circulo(nome="bola", raio=5)
-print(sala.area())
-print(bola.area())
 
-    
+
