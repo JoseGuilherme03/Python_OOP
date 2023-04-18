@@ -8,7 +8,7 @@ class Usuario():
     @property
     def numero_artigos(self):
         return self.__numero_artigos
-    
+
     @numero_artigos.setter
     def numero_artigos(self, nart):
         self.__numero_artigos = nart
@@ -26,7 +26,7 @@ class Autor(Usuario):
 class Editor(Usuario):
     def calcular_pontos(self):
         return ((super().calcular_pontos() * 6) + 15)
-        
+
 
 autor1 = Autor("José", "Fernandes", pontos=0, numero_artigos=5)
 editor1 = Editor("Maria", "Silva", pontos=0, numero_artigos=5)
